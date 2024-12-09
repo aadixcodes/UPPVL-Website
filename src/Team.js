@@ -1,9 +1,4 @@
 import React from 'react'
-import news from './news.png'
-import arrow from './arrow.png'
-import email from './emailicon.png'
-import call from './call.svg'
-import  fax from './fax.svg'
 import contactgirl from './contactgirl.png'
 import submit from './submitbtn.svg'
 import team1 from './team1.png'
@@ -12,7 +7,6 @@ import team2 from './team2.png'
 export default function Team() {
   return (
     <>
-    
 <div className="breadcrumb-container">
       <div className="breadcrumb-overlay">
         <div className="breadcrumb-content">
@@ -20,9 +14,6 @@ export default function Team() {
         </div>
       </div>
     </div>
-
-   
-
    <section id='teameet'>
     <div className='container-fluid'>
         <div className='contact-title'>
@@ -41,13 +32,9 @@ export default function Team() {
            <div className='col-md-3 col-6'>
           <img src={team2} className='img-fluid t2'/>
            </div>
-
-
            <div className='col-md-3 col-6'>
           <img src={team1} className='img-fluid t3'/>
            </div>
-
-
         </div>
    </section>
 
