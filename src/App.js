@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Header from './Header';
 import News from './News';
 import Contact from './Contact';
+import Team from './Team';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path="/standings" element={<Standing />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
+
 
 
         </Routes>
