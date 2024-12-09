@@ -888,6 +888,9 @@ font-weight: 300;
   .mbnav{
     display: block;
   }
+  .logomobile{
+    width: 30px!important;
+  }
   .social-icon{
     display: block;
   }

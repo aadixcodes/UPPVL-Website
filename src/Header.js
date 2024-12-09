@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import { Link } from 'react-router-dom';
-import logo from './logo1.svg'
+import logo from './footer_logo.png'
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -148,7 +148,11 @@ export default function Header() {
 
 
 <nav className={`navbar mbnav navbar-expand-lg bg-body-tertiary ${isOpen ? 'open' : ''}`}>
-      <a className="navbar-brand" href="#">uupvl LOGO</a>
+      <a className="navbar-brand" href="#">
+
+      <img src={logo}  className="img-fluid logomobile" />
+
+      </a>
 
       <div className="container-fluid">
         <button
