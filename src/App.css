@@ -1,0 +1,1307 @@
+#header{
+  background-color: #000;
+  padding:0px
+}
+@import url('https://db.onlinewebfonts.com/c/65c79a29b6ed725883911cb318380955?family=Gilmer+Regular');
+@import url('https://db.onlinewebfonts.com/c/7defc091a129b48948f730474b109d8f?family=Gilmer+Bold');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('./font1/TestSohne-Dreiviertelfett-BF663d89ccc5f66.otf');
+}
+
+
+body{
+  background-color: #000;
+}
+
+@font-face {
+  font-family: myFirstFont1;
+  src: url('./font1/TestSohne-DreiviertelfettKursiv-BF663d89cd2f687.otf');
+}
+
+@font-face {
+  font-family: myFirstFont2;
+  src: url('./font1/TestSohneBreit-KraftigKursiv-BF663d89ca9beae.otf');
+}
+
+
+@font-face {
+  font-family: myFirstFont3;
+  src: url('./font1/Motterdam.ttf');
+}
+
+.preheader .marque-date h5{
+  color: #ffffffba;
+  font-family: myFirstFont1;
+  font-weight: 800;
+  margin-bottom: 0px;
+  
+  font-size: 14px;
+  line-height: 14px;
+}
+.preheader .marque-date{
+  text-align: center;
+}
+.preheader .marque-date h4{
+  color: #ffffffcf;
+  margin-bottom: 0px;
+  font-family: "Test Shne Breit";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.League-title  .uppvl h4{
+  color: #FFCA49;
+  font-family: "Test Shne Breit";
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+.League-title  .uppvl h3{
+  color: #fff;
+  font-family: myFirstFont;
+  margin-bottom: 0px;
+  font-weight:600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.countdown-time h4
+{
+ font-weight: 800;
+ color: #fff;
+ font-size: 12px;
+ font-family: "Test Shne Breit";
+ text-transform: uppercase;
+ line-height: 14px;
+ margin-bottom: 0px;
+}
+.timer h5{
+  color: #FFCA49;
+  font-family: "Test Shne Breit";
+  font-weight: 800!important;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+.timer p{
+  color: #fff;
+  font-family: "Test Shne Breit";
+  font-weight: 700!important;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.timer li{
+  margin-right: 30px;
+}
+.timer
+{
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.navbar-nav ul li a{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 800!important;
+  font-family: myFirstFont1!important;
+
+}
+.nav-item {
+  position: relative;
+  padding: 0 15px; /* Space between items */
+}
+/* Separator line between the items */
+.nav-item:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  width: 1px;
+  height: 30px; /* Height of the line */
+  background-color: #ddd; /* Color of the separator */
+  transform: translateY(-50%) rotate(40deg); /* Rotate the line */
+}
+.bg-body-tertiary{
+  padding: 0px;
+}
+.button {
+  background-color: #FFCA49;
+  border: none;
+  cursor: pointer;
+  transform: skew(-40deg, 0); /* Tilt the button itself */
+  transition: background-color 0.3s;
+}
+.button::before{
+  display: none;
+}
+.nav-item a{
+  color: #000!important;
+  padding: 14px;
+}
+.logoheader img{
+  width: 80px;
+  margin: auto;
+  display: block;
+}
+.button-text {
+  display: inline-block;
+  font-style: normal!important;
+  transform:skew(40deg, 0); /* Counter the skew for the text */
+}
+.line{
+  background-color: #FFCA49;
+  height: 5px;
+  width: 100%;
+}
+
+.navbar-nav{
+  padding: 0px 25px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 12px 20px!important;
+  text-transform: uppercase;
+  font-weight: 700!important;
+  font-style: italic;
+  font-family: "Test Shne Breit";
+}
+/* fixtures */
+#fixtures{
+  padding: 40px 0px 40px 20px;
+  background-color: #000;
+}
+.card-container {
+  position: relative;
+  width: 100%;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(231 231 231 / 0%) 0%, rgba(0, 0, 0, 0.6336659663865547) 48%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.youtube-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.youtube-logo img {
+  width: 30px;
+  height: 30px;
+  left: 12px;
+  position: relative;
+  top: 15px;
+}
+.upload-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.card-container{
+  border-radius: 28px;
+}
+.match-highlights {
+  color: #fff!important;
+}
+.section-heading h4{
+  color: #fff;
+  font-family: 'myFirstFont1';
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.upload-info p{
+  color: #ffff;
+  font-family:myFirstFont;
+  font-size: 28px;
+text-transform: uppercase;
+font-style: italic;
+left: 10px;
+position: relative;
+line-height: 30px;
+width: 80%;
+margin-bottom: 0px;
+}
+.fixture-date {
+  margin-top:1px;
+}
+.clockwise{
+  width: 20px!important;
+}
+.fixture-date p{
+  font-size: 14px;
+  color: #FFCA49;
+  font-family: myFirstFont2;
+}
+
+.upload-info p{
+  display: flex;
+}
+
+.verticaline{
+  width: .9px!important;
+}
+
+
+
+
+/* banner */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.banner {
+  background-image: url('./banner.jpg'); /* Add your banner image */
+  background-size: cover;
+  height: 90vh; /* Adjust height as needed */
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* This adds a semi-transparent overlay */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-content {
+  position: absolute;
+  right: 10%; /* Adjust right positioning */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Ensures proper vertical centering */
+  color: white;
+  text-align: right; /* Right-aligns the text */
+}
+
+.banner-content h1 {
+  font-size: 3em;
+  font-family: myFirstFont3;
+  margin: 0;
+}
+
+.banner-content p {
+  font-size: 1.2em;
+}
+
+
+/* About Us */
+#about-us{
+  background-color: #000;
+  padding: 30px 20px;
+}
+#about-us p{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+  width: 70%;
+  font-size: 18px;
+  margin: auto;
+}
+
+#mission-vision{
+  background-color: #000;
+}
+
+.missionbox{
+  background: #14141F;
+  padding: 40px 60px;
+  margin: 0px 80px;
+  border-radius: 20px;
+}
+.para-mission p{
+  color:#ffffffd1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.missionbox1 h4{
+  color: #fff;
+  font-size: 28px;
+  margin-bottom:20px;
+  /* margin-top: 10px; */
+  font-family: myFirstFont1;
+}
+.linehightlight{
+  background-color: #FFCA49;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 6px;
+    transform: skew(-40deg, 0);
+    transition: background-color 0.3s;
+}
+
+.img-mission img{
+  width: 100%;
+  position: relative;
+  left: 150px;
+}
+
+.img-mission1 img{
+  width: 100%;
+  position: relative;
+  left: 100px;
+  border-radius: 40px;
+}
+.img-mission2  img{
+  width: 100%;
+  position: relative;
+  right: 100px;
+  border-radius: 40px;
+}
+
+#meet-team{
+  background-color: #000;
+  padding: 40px 40px;
+}
+.headingteam  h4{
+  color: #fff;
+   font-family: myFirstFont1;
+   text-transform: uppercase;
+}
+
+.headingteam  p{
+  color: #fff;
+  margin-top: 15px;
+  font-family: 'poppins';
+  font-size: 14px;
+  line-height: 25px;
+  width: 60%;
+}
+.videocontent{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+#video-section{
+  padding: 40px 20px;
+  background-color: #000;
+}
+.videocontent h4{
+  color: #000;
+  font-family: myFirstFont1;
+  text-transform: uppercase;
+}
+.videocontent p{
+  font-family: 'poppins';
+  width: 59%;
+  margin: auto;
+  line-height: 25px;
+}
+.bg-black{
+  background-color: #000;
+}
+.whitebox{
+  padding: 80px;
+  border-radius: 40px;
+  background-color: #fff;
+}
+.vision-description p {
+  color: #fff;
+  font-family: 'poppins';
+  font-weight: 300;
+  width: 80%;
+  line-height:26px;
+}
+
+.left-vision h4 {
+  color: #fff;
+  font-family: 'poppins';
+  font-family: myFirstFont1;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+#vision{
+  padding: 50px 150px;
+}
+.right-vision  img{
+  width: 80%;
+  border-radius: 40px;
+}
+
+#table-points{
+  padding: 80px 150px; 
+  background-color: #000;
+}
+
+.leaderboard-table td{
+font-family: 'poppins';
+color: #000;
+background-color: #fff;
+text-transform: uppercase;
+}
+.leaderboard-table th
+{
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-family: myFirstFont1;
+  text-transform: uppercase;
+}
+
+tr{
+  border-bottom: 2px solid #000;
+}
+.trhighlight{
+  font-family: myFirstFont1!important;
+  text-transform: uppercase;
+}
+
+#fixture-home{
+background-color: #fff;
+padding: 40px 20px;
+margin: 20px;
+border-radius: 20px;
+background-image: url('./strip.png');
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#fixture-home h4{
+  color: #000!important;
+}
+.match-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 0.8px solid #E5E5E5;
+  padding: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  padding: 1px 15px;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.date {
+  text-align: center;
+}
+
+.date .day {
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+}
+
+.date .month,
+.date .year {
+  font-size: 12px;
+  font-family: myFirstFont;
+}
+.details{
+  align-self: center;
+}
+
+.details .match-info {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #000;
+  transform: skew(-40deg, 0);
+  letter-spacing: 0.5px;
+  font-family: myFirstFont;
+  background: linear-gradient(85deg, rgba(255,255,255,1) 0%, rgba(153,153,153,1) 100%);
+
+}
+.match-infocaption
+{
+  transform: skew(40deg, 0);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.team img {
+  width: 80px;
+  height: 80px;
+}
+
+.match-info {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.match-info .conference {
+  font-size: 12px;
+  color: #888;
+  font-family: "Test Shne Breit";
+}
+
+.match-info .time {
+  font-size: 28px;
+  margin: 10px 0;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+
+}
+
+.match-info .teams {
+  font-size: 16px;
+  font-family: myFirstFont;
+}
+
+.match-info .location {
+  font-size: 12px;
+  color: #000000;
+  font-family: "Test Shne Breit";
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 15px;
+  border-top: 2px solid #E5E5E5;
+}
+
+#foter-section  .container{
+  width: 75%;
+}
+
+.btn {
+  background: linear-gradient(191deg, rgb(39 36 255) 0%, rgb(20 17 112) 100%);
+  color: #fff;
+  border: none;
+  width: 40%;
+  padding:7px 15px;
+  font-size: 12px;
+  border-radius: 0;
+  cursor: pointer;
+  transform: skew(-40deg, 0);
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background: #003f7f;
+}
+.button-text1 {
+  display: inline-block;
+  font-style: normal!important;
+  color:#fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Test Shne Breit";
+  transform:skew(40deg, 0); /* Counter the skew for the text */
+}
+
+
+
+.large-button a{
+  width: 60%;
+  margin: 40px auto;
+  display: block;
+  background-image:url('./buttonbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border: 0px;
+  transform: skew(-40deg, 0);
+}
+.gradient-text {
+  font-size: 30px; /* Adjust font size */
+  display: inline;
+  font-family: myFirstFont;
+  transform: skew(40deg, 0);
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #FFFFFF, #B4B4FF); /* Pink gradient from top to bottom */
+  color: transparent; /* Make the text transparent to show the gradient */
+  text-align: center; /* Center the text */
+  -webkit-text-stroke: 2px #6E6BFF; /* Apply pink outline with 2px width */
+  text-stroke: 2px #6E6BFF; /* Same effect for non-webkit browsers */
+}
+
+#foter-section{
+  background-image: url('./footerimg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top: 3px solid #FFCA49;
+  padding: 50px 30px 20px ;
+}
+.footerlink ul li{
+  color: #fff;
+  list-style-type: none;
+  font-family: "Test Shne Breit";
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 14px;
+}
+.social-icon{
+  margin-top: -50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.footerlink  img{
+  width: 102px;
+}
+.footerlink ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+.copy-rigth{
+  display: flex;
+  justify-content: space-between;
+}
+.copy-rigth  p{
+  color: #fff;
+  font-family: 'Test Shne Breit';
+  font-size: 13px;
+  font-style: italic;
+
+}
+
+.social-icon ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.social-icon ul li{
+  list-style-type: none;
+}
+.social-icon ul li{
+width: 60px;
+}
+.teamlogofooter{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+.newsbox img{
+  width: 100%;
+}
+.newscard{
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.caption-news h5{
+  color: #000;
+  font-family: "Gilmer Bold";
+  margin-bottom: 10px;
+
+}
+.caption-news{
+  padding: 20px;
+}
+.caption-news p
+{
+  font-family: "Gilmer Regular";
+  color: #505053;
+  line-height: 18px;
+}
+
+.arrowreadmore{
+  width: 14px!important;
+}
+
+.card-footer{
+  padding: 0px 20px ;
+}
+.read-more p{
+  margin-top: 35px;
+  font-size: 18px;
+  font-family: "Gilmer Bold";
+  background: linear-gradient(139deg, rgba(73,70,252,1) 0%, rgba(45,40,192,1) 63%);
+  -webkit-background-clip: text;  /* For Chrome, Safari, Opera */
+  background-clip: text;  /* For other browsers */
+  color: transparent;  /* Make the text color transparent so the background gradient shows */
+}
+.date-news p{
+  font-family: "Gilmer Regular";
+  color: #505053;
+  font-style: italic;
+}
+
+.newpage{
+  padding: 10px 60px 30px 60px;
+}
+.contact-title h4{
+  color: #fff;
+  font-family: 'myFirstFont1';
+  font-size: 28px;
+  text-align: center;
+}
+.contact-title p{
+  color: #fff;
+font-family: 'poppins';
+font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-card h6
+{
+  font-family: 'myFirstFont1';
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+
+}
+#calltoaction{
+  margin: 10px 110px;
+}
+.contact-card img{
+  margin: auto;
+  display: block;
+  margin-bottom: 13px;
+}
+.contact-card p{
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+
+  font-family: 'poppins';
+}
+
+.contact-title{
+  margin: 30px auto;
+  text-align: center;
+}
+
+#form-us{
+  margin: 20px;
+  background-color: #fff!important;
+  border-radius: 34px;
+
+}
+input,textarea {
+  background-color: #F5F5F5!important;
+  border-radius: 0px!important;
+  border: 0px!important;
+  width: 100%;
+  margin-bottom: 20px;
+  transform: skew(168deg, 0);
+}
+input::placeholder {
+  color: #00000097;
+  font-family: 'poppins';
+  font-size: 12px;
+}
+textarea::placeholder {
+  color: #000;
+  font-family: 'poppins';
+  font-size: 12px;
+}
+textarea{
+  border-radius: 0px!important;
+}
+.form-right{
+  padding: 20px;
+  width: 75%;
+}
+.form-control{
+  padding: 10px;
+}
+.form-right h4{
+  color: #000;
+  font-family: 'myFirstFont1';
+  text-transform: uppercase;
+  font-size: 24px;
+
+}
+.submitcustom{
+margin: auto;
+display: block;
+}
+
+.form-right p{
+font-weight: 300;
+  font-family: 'poppins';
+  width: 70%;
+  font-size: 12px;
+
+}
+
+.t1{
+  background-color: #FF0000;
+  border-radius: 20px;
+}
+.t2{
+  background-color:  #007549;
+  border-radius: 20px;
+
+}
+
+.t3{
+  background-color:  #ab860e;
+  border-radius: 20px;
+
+}
+.mbnav{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .mbnav{
+    display: block;
+  }
+  .social-icon{
+    display: block;
+  }
+  .ul-link {
+  display: none!important;
+  }
+  .teamlogofooter{
+    margin-top: 10px;
+  }
+  .social-icon{
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .form-right{
+    width: 100%;
+  }
+#news{
+  padding: 30px 10px;
+}
+#form-us{
+  margin: 10px;
+}
+#form-us{
+  border-radius: 15px;
+  padding: 10px;
+}
+.caption-news h5{
+  font-size: 16px;
+}
+.caption-news p{
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.read-more p{
+  margin-top: 10px;
+}
+.caption-news{
+  padding: 15px 15px 0px 15px;
+}
+.date-news p{
+  font-size: 11px;
+}
+.newscard
+{
+  margin-bottom: 20px;
+}
+.fixture-date p{
+  font-size: 10px!important;
+}
+.upload-info p{
+  font-size: 16px;
+  line-height: 21px;
+}
+.youtube-logo img{
+  width: 100%!important;
+}
+#calltoaction{
+  margin: 20px 10px;
+}
+.contact-title h4{
+  font-size: 18px;
+}
+.contact-title p{
+  width: 100%;
+  font-size: 11px;
+}
+#fixtures{
+  padding: 30px 0px 30px 10px;
+}
+#fixture-home{
+  margin: 0px;
+}
+.footer{
+  display: none!important;
+}
+.team img{
+  width:50px!important;
+  height: 60px!important;
+
+}
+.match-info .time{
+  font-size: 26px;
+}
+.match-info .teams{
+  font-size: 14px;
+}
+.banner{
+  height: 100%;
+}
+#foter-section{
+  padding: 20px 10px;
+}
+.copy-rigth{
+  display: block;
+}
+#foter-section .container{
+  width: 90%;
+}.copy-rigth p{
+  font-size: 10px;
+  color: #dfdfdf;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+#fixture-home{
+  padding: 20px 10px;
+}
+#about-us p{
+  width: 100%;
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+  text-align: left;
+}
+#about-us{
+  padding: 25px 10px;
+}
+.breadcrumb-title{
+  font-size: 28px!important;
+}
+.form-right p{
+  width: 100%;
+}
+#form-us img{
+  width: 100%!important;
+}
+.breadcrumb-container{
+  height: 190px!important;
+}
+.missionbox{
+  margin: 0px;
+}
+.missionbox{
+  padding: 20px 15px;
+}
+.img-mission1 img{
+  left: auto;
+  border-radius: 10px;
+}
+.para-mission p{
+  font-size: 13px;
+  font-weight: 200;
+}
+.img-mission2 img{
+  display: none;
+}
+.missionbox1 h4{
+  font-size: 20px;
+}
+.img-mission1 img{
+  margin-bottom: 20px;
+}
+#meet-team{
+  padding: 20px 10px;
+}
+.headingteam p{
+  font-size: 11px;
+  width: 93%;
+  line-height:20px;
+  font-weight: 200;
+  line-height: 15px;
+}
+.whitebox{
+  padding: 20px 10px;
+}
+.videocontent p{
+  width: 100%;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+#video-section{
+  padding: 20px 10px;
+}
+.whitebox{
+  border-radius: 20px;
+}
+.vm{
+  width: 100%!important;
+  height: 200px!important;
+  border-radius: 10px!important;
+}
+#vision{
+  padding: 20px 10px;
+}
+.left-vision h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.vision-description p {
+  color: #fff;
+  font-family: 'poppins';
+  font-weight: 300;
+  width: 97%;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 200;
+}
+.right-vision img{
+  width: 100%;
+  border-radius: 10px;
+}
+#table-points{
+  padding: 20px 10px;
+}
+td{
+  white-space: nowrap;
+}
+.trhighlight img{
+  display: none;
+}
+.leaderboard-table td{
+  font-size: 12px;
+}
+.form-icon{
+  font-size: 12px!important;
+}
+.form-icon{
+  width: 25px!important;
+  height: 25px!important;
+}
+.newpage{
+  padding: 15px 10px 20px 10px;
+}
+.gradient-text{
+  font-size: 16px;
+}
+#fixture-home{
+  background-position: left;
+}
+.large-button a{
+  width: 70%;
+  transform: skew(331deg, 0);
+  text-decoration: none;
+  padding:8px;
+  margin: 20px auto;
+  background-position: left;
+}
+.nav-item:not(:first-child)::before{
+  display: none;
+}
+.section-heading h4{
+margin-bottom: 15px;
+font-size: 16px!important;
+  
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+.navbar-toggler{
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+.overlay-content{
+  padding: 10px;
+}
+.upload-info{
+  left: 2px;
+  bottom: 4px!important;
+}
+.nav-link{
+  font-size: 13px;
+}
+.navbar-nav{
+  padding: 10px;
+}
+.bg-body-tertiary{
+}
+.details .match-info{
+  padding: 2px 15px;
+}
+.gradient-text{
+  -webkit-text-stroke: 1px #6E6BFF
+}
+#header{
+  display: none;
+}
+.arrowreadmore{
+  width: 10px!important;
+}
+.date .day{
+  font-size: 20px;
+}
+.date .month, .date .year{
+  font-size: 9px;
+}
+.content{
+  padding: 10px 12px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px; /* Adjust based on your needs */
+}
+
+.navbar-toggler-icon {
+  position: relative;
+  top: 10px;
+  width: 30px;
+  height: 3px;
+  right: 20px;
+  background-color: #ffca49;
+  transition: transform 0.3s ease-in-out;
+}.navbar-toggler{
+  z-index: 999999;
+}
+
+/* Hamburger icon (3 bars) when menu is closed */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #ffca49;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar {
+  background-color: #000!important;
+}
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+.navbar-collapse.show{
+  background-color: #000;
+}
+.nav-item a{
+  color: #fff!important;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* When navbar is open (show X) */
+.navbar-toggler-icon.close {
+  background: transparent; /* Hide the middle bar */
+}
+
+.navbar-toggler-icon.close::before {
+  transform: rotate(45deg);
+  top: 0;  /* Move the top bar to the center */
+}
+
+.navbar-toggler-icon.close::after {
+  transform: rotate(-45deg);
+  top: 0;  /* Move the bottom bar to the center */
+}
+
+/* Navbar collapse sliding effect */
+.navbar-collapse {
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(100%); /* Initially off-screen */
+}
+
+.navbar-collapse.show {
+  transform: translateX(0); /* Slide in when menu is open */
+  box-shadow: rgba(255, 203, 73, 0.587) 0px 0px 42px;
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 250px; /* Adjust width */
+    height: 100vh;
+    z-index: 999;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .separator  .button-text{
+    color: #000!important;
+  }
+  .nav-item {
+    margin: 1rem 0;
+  }
+  .navbar-brand {
+    color: #FFF;
+    font-family: myFirstFont1;
+    left: 10PX;
+    position: relative;
+  }
+  .navbar{
+    padding: 7px;
+  }
+  .navbar-toggler-icon{
+    background-image: url();
+  }
+
+ 
+}
+
+}
+
+
+

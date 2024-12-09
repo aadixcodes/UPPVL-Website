@@ -1,0 +1,51 @@
+.leaderboard-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .leaderboard-table th {
+    background-color: #000;
+    color: #fff;
+    font-size: 10px;
+  }
+  
+  .form-icons {
+    display: flex;
+  }
+  
+  .form-icon {
+    width: 30px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .form-icon.W {
+    background-color: #15B800;
+  }
+  
+  .form-icon.L {
+    background-color: red;
+  }
+  
+  .form-icon.D {
+    background-color: black;
+  }
+  
