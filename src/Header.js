@@ -148,7 +148,7 @@ export default function Header() {
 
 
 <nav className={`navbar mbnav navbar-expand-lg bg-body-tertiary ${isOpen ? 'open' : ''}`}>
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="/">
 
       <img src={logo}  className="img-fluid logomobile" />
 
