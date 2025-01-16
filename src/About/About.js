@@ -49,7 +49,13 @@ export default function About() {
       <section id='about-us'>
         <div className='container'>
           <div className='aboutpara'>
-            <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself").</p>
+            <p>About Uttar Pradesh Pro Volleyball League (UPPVL)
+
+The Uttar Pradesh Pro Volleyball League (UPPVL) is a platform to promote and grow volleyball in Uttar Pradesh. Led by Kulvant Baliyan, the league focuses on giving players a chance to showcase their talent and taking the sport to a bigger audience.
+
+UPPVL aims to bring excitement to the game through competitive matches and build a strong connection with fans. By supporting players and encouraging more people to enjoy volleyball, the league is working to make the sport popular across the state.
+
+With a clear vision, UPPVL is committed to creating a bright future for volleyball in Uttar Pradesh.</p>
           </div>
         </div>
       </section>
