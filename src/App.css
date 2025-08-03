@@ -213,7 +213,7 @@ body{
 }
 .nav-item {
   position: relative;
-  padding: 0 15px; /* Space between items */
+  padding: 0 0px; /* Space between items */
 }
 /* Separator line between the items */
 .nav-item:not(:first-child)::before {

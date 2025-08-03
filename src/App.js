@@ -10,7 +10,9 @@ import Footer from './Footer';
 import Header from './Header';
 // import News from './News';
 import Contact from './Contact';
-import Team from './Team';
+// import Team from './Team';
+import Team from './Team/page';
+import TeamDetail from './Team/[slug]/page'
 import News from './components/News';
 import Gallery from './components/Gallery';
 import BlogGridPage from './components/BlogGridPage';
@@ -32,6 +34,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/team/:slug" element={<TeamDetail />} />
           <Route path="/fixtures" element={<Fixtures />} />
           <Route path="/uppvl-tv" element={<UPPVLTV />} />
           <Route path="/auction" element={<AuctionPage />} />
