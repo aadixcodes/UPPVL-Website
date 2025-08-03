@@ -112,11 +112,11 @@ export default function Header() {
                           Auction
                           </Link>
                         </li>
-                        <li className="nav-item separator">
+                        {/* <li className="nav-item separator">
                           <Link className="nav-link" to="/creators-tour">
                           Creators Tour
                           </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item separator">
                           <Link className="nav-link" to="/news">
                           News

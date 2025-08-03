@@ -33,8 +33,10 @@ import LatestNews from "./components/LatestNews";
 import Newscard from "./components/Newscard";
 import BlogCard from "./components/BlogCard";
 import BlogHome from "./components/BlogHome";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   const responsiveSettings = {
     0: {
       items: 1, // Show 1 item on small screens
@@ -45,6 +47,22 @@ export default function Home() {
     1000: {
       items: 3, // Show 3 items on larger screens
     },
+  };
+
+  // Team data with slugs
+  const teams = [
+    { id: 1, img: team1, slug: "ayodhya-super-kings-squad", name: "ASK" },
+    { id: 2, img: team2, slug: "gorakhpur-giants-squad", name: "Gorakhpur" },
+    { id: 3, img: team3, slug: "kashi-warriors-squad", name: "Kashi" },
+    { id: 4, img: team4, slug: "lucknow-tigers-squad", name: "Lucknow" },
+    { id: 5, img: team5, slug: "mathura-yodhyas-squad", name: "Mathura" },
+    { id: 6, img: team6, slug: "moradabad-bulls-squad", name: "Moradabad" },
+    { id: 7, img: team7, slug: "muzaffarnagar-lions-squad", name: "Muzzafarnagar" },
+    { id: 8, img: team8, slug: "noida-thunders-squad", name: "Noida" }
+  ];
+
+  const handleTeamClick = (slug) => {
+    navigate(`/team/${slug}`);
   };
 
   const options = {
@@ -133,7 +151,7 @@ export default function Home() {
        <div>
         <Newscard />
          </div>
-      <section id="meet-team">
+         <section id="meet-team">
         <div className="container-fluid">
           <div className="headingteam">
             <div className="">
@@ -144,40 +162,22 @@ export default function Home() {
                 teams, meet the players, and follow their league journey.
               </p>
             </div>
-           
 
             <OwlCarousel className="owl-theme" {...options}>
-              <div className="item">
-                <img src={team1} className="t1" />
-              </div>
-
-              <div className="item">
-                <img src={team2} className="t2" />
-              </div>
-
-              <div className="item">
-                <img src={team3} className="t3" />
-              </div>
-
-              <div className="item">
-                <img src={team4} className="t4" />
-              </div>
-
-              <div className="item">
-                <img src={team5} className="t5" />
-              </div>
-
-              <div className="item">
-                <img src={team6} className="t6" />
-              </div>
-
-               <div className="item">
-                <img src={team7} className="t7" />
-              </div>
-
-               <div className="item">
-                <img src={team8} className="t8" />
-              </div>
+              {teams.map((team) => (
+                <div 
+                  className="item" 
+                  key={team.id}
+                  onClick={() => handleTeamClick(team.slug)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <img 
+                    src={team.img} 
+                    className={`t${team.id}`} 
+                    alt={team.name}
+                  />
+                </div>
+              ))}
             </OwlCarousel>
           </div>
         </div>

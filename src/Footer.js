@@ -115,7 +115,7 @@ export default function Footer() {
       
 
         <div className='copy-rigth'>
-            <p>© 2025 Uttar Pradesh Pro League. Developed by <Link target='_blank' to="https://varnixmedia.com" className='text-white'>Varnix Media</Link>. All rights reserved.</p>
+            <p>© 2025 Uttar Pradesh Pro League. Developed by <Link target='_blank' to="https://varnix.in" className='text-white'>Varnix Media</Link>. All rights reserved.</p>
             <p>Privacy Policy | Terms & Conditions</p>
         </div>
     </div>

@@ -404,7 +404,7 @@ const galleryData = {
     'https://res.cloudinary.com/dctkzy9nd/image/upload/v1754203033/G15_bixeil.jpg',
     'https://res.cloudinary.com/dctkzy9nd/image/upload/v1754203031/G25_mbn94i.jpg',
   ],
-  'trail': [
+  'trial': [
     'https://res.cloudinary.com/dctkzy9nd/image/upload/v1754203159/G9_ucfkyw.jpg',
     'https://res.cloudinary.com/dctkzy9nd/image/upload/v1754203158/G8_foax4t.jpg',
     'https://res.cloudinary.com/dctkzy9nd/image/upload/v1754203157/G7_ysqfcr.jpg',

@@ -163,7 +163,7 @@ const AuctionPage = () => {
         .auction-description {
           max-width: 1100px;
           margin: 0 auto 50px;
-          font-style: 'poppins, sans-serif';
+          font-family: 'poppins';
           font-size: 18px;
           line-height: 1.8;
           text-align: center;
@@ -200,6 +200,13 @@ const AuctionPage = () => {
           flex-direction: column;
           justify-content: center;
         }
+
+.category-title{
+font-family: 'poppins';
+}
+.category-price{
+font-family: 'poppins';
+}
 
         .category-image {
           border-radius: 8px;

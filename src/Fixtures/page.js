@@ -52,7 +52,9 @@ const FixturesPage = () => {
           <div className="page-fixtures-container">
             {Object.entries(matchesByDay).map(([day, dayMatches]) => (
               <div key={day} className="page-match-day-container">
-                <h2 className="page-match-day-header">{day}</h2>
+                <h2 className="page-match-day-header" style={day === 'DAY 1' ? {fontFamily: 'myFirstFont2'} : {}}>
+                  {day}
+                </h2>
                 <div className="page-matches-grid">
                   {dayMatches.map(match => (
                     <div key={match.id} className="page-match-card">
@@ -70,12 +72,12 @@ const FixturesPage = () => {
                         </div>
                         <div className="page-match-teams">
                           <div className="page-team">
-                            <img src={teamLogos[match.team1]} alt={match.team1} className="page-team-logo" />
+                            <img src={teamLogos[match.team1]} alt={match.team1} className="page-team-logo" style={{width: '80px', height: '80px'}} />
                             <span className="page-team-name">{match.team1}</span>
                           </div>
                           <div className="page-vs-circle">VS</div>
                           <div className="page-team">
-                            <img src={teamLogos[match.team2]} alt={match.team2} className="page-team-logo" />
+                            <img src={teamLogos[match.team2]} alt={match.team2} className="page-team-logo" style={{width: '80px', height: '80px'}} />
                             <span className="page-team-name">{match.team2}</span>
                           </div>
                         </div>
@@ -92,10 +94,26 @@ const FixturesPage = () => {
 
       {/* CSS Styles */}
       <style jsx>{`
+        @font-face {
+          font-family: 'myFirstFont2';
+          src: url('/path-to-your-font/myFirstFont2.woff2') format('woff2');
+        }
+        
         .page-fixtures {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-family: 'Poppins', sans-serif;
           color: #333;
           width: 100%;
+        }
+
+        .page-breadcrumb-title,
+        .page-match-day-header,
+        .page-date-day,
+        .page-date-month-year,
+        .page-match-time,
+        .page-match-conference,
+        .page-team-name,
+        .page-match-location {
+          font-family: 'Poppins', sans-serif;
         }
 
         .page-fixtures-background {
@@ -148,15 +166,14 @@ const FixturesPage = () => {
 
         .page-match-day-container {
           margin-bottom: 40px;
-        //   background: white;
           padding: 25px;
           border-radius: 10px;
-        //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .page-match-day-header {
-        width: 100%;
-        text-align: center;
+          width: 100%;
+          font-family: myFirstFont2;
+          text-align: center;
           font-size: 2.5rem;
           color:rgb(255, 255, 255);
           margin-bottom: 25px;
@@ -243,8 +260,6 @@ const FixturesPage = () => {
         }
 
         .page-team-logo {
-          width: 60px;
-          height: 60px;
           object-fit: contain;
           margin-bottom: 10px;
         }
@@ -342,8 +357,8 @@ const FixturesPage = () => {
           }
 
           .page-team-logo {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
           }
         }
       `}</style>
