@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header'
 import Breadcrumb from '../Breadcumb/Breadcrumb'
 import LeaderboardTable from './LeaderboardTable'
-import st from './standium.png'
+import st from '../Stadium.jpg'
 export default function Standing() {
   return (
 <>

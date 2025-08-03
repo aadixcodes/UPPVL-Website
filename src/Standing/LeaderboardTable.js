@@ -4,82 +4,91 @@ import img1 from './image 12.png'
 const leaderboardData = [
   {
     position: 1,
-    team: "India",
-    points: 28,
-    matchesPlayed: 9,
-    wins: 9,
+    team: "NOIDA THUNDERS	",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
     losses: 0,
-    form: ["W", "W", "W", "L", "D"],
-    nextMatch: "Zimbabwe"
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
   },
   {
     position: 2,
-    team: "Australia",
-    points: 19,
-    matchesPlayed: 9,
-    wins: 9,
+    team: "Lucknow Tigers",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
     losses: 0,
-    form: ["W", "W", "W", "L", "D"],
-    nextMatch: "Sri Lanka"
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
   },
   {
-    position: 2,
-    team: "Australia",
-    points: 19,
-    matchesPlayed: 9,
-    wins: 9,
+    position: 3,
+    team: "Gorakhpur Giants",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
     losses: 0,
-    form: ["W", "W", "W", "L", "D"],
-    nextMatch: "Sri Lanka"
-  },
-
-
-
-  {
-    position: 2,
-    team: "Australia",
-    points: 19,
-    matchesPlayed: 9,
-    wins: 9,
-    losses: 0,
-    form: ["W", "W", "W", "L", "D"],
-    nextMatch: "Sri Lanka"
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
   },
 
 
   {
-    position: 2,
-    team: "Australia",
-    points: 19,
-    matchesPlayed: 9,
-    wins: 9,
+    position: 4,
+    team: "Mathura Yodhas",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
     losses: 0,
-    form: ["W", "W", "W", "L", "D"],
-    nextMatch: "Sri Lanka"
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
   },
 
 
 
   {
-    position: 2,
-    team: "Australia",
-    points: 19,
-    matchesPlayed: 9,
-    wins: 9,
+    position: 5,
+    team: "Ayodhya Super Kings ",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
     losses: 0,
-    form: ["W", "W", "W", "L", "D"],
-    nextMatch: "Sri Lanka"
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
   },
 
   {
-    position: 2,
-    team: "Australia",
-    points: 19,
-    matchesPlayed: 9,
-    wins: 9,
+    position: 6,
+    team: "Moradabad Bulls",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
     losses: 0,
-    form: ["W", "W", "W", "L", "D"],
-    nextMatch: "Sri Lanka"
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
+  },
+
+  {
+    position: 7,
+    team: "Kashi Warriors ",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
+    losses: 0,
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
+  },
+
+  {
+    position: 8,
+    team: "Muzaffarnagar Lions",
+    points: 0,
+    matchesPlayed: 0,
+    wins: 0,
+    losses: 0,
+    form: ["T", "T", "T", "T", "T"],
+    nextMatch: "T"
   },
   // Add more data for each team as shown in the image
 ];
@@ -104,21 +113,23 @@ const LeaderboardTable = () => {
           {leaderboardData.map((team, index) => (
             <tr  key={index}>
               <td className='text-center'>{team.position}</td>
-              <td className='text-left trhighlight'> <img src={img1} className='img-fluid' /> &nbsp;&nbsp;{team.team}</td>
+              <td className='text-left trhighlight'>
+                 {/* <img src={img1} className='img-fluid' /> */}
+                  &nbsp;&nbsp;{team.team}</td>
               <td className='trhighlight'>{team.points}</td>
               <td>{team.matchesPlayed}</td>
               <td>{team.wins}</td>
-              <td>{team.losses}</td>
+              <td>{team.wins}</td>
               <td>
                 <div className="form-icons">
                   {team.form.map((result, idx) => (
                     <span key={idx} className={`form-icon trhighlight ${result}`}>
-                      {result}
+                      {/* {result} */} -
                     </span>
                   ))}
                 </div>
               </td>
-              <td>{team.nextMatch}</td>
+              <td>TBD</td>
             </tr>
           ))}
         </tbody>

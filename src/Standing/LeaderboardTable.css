@@ -1,6 +1,7 @@
 .leaderboard-container {
     width: 100%;
     overflow-x: auto;
+    margin: 20px 0px;
   }
   
   .leaderboard-table {
@@ -37,7 +38,7 @@
     font-size: 16px;
   }
   
-  .form-icon.W {
+  .form-icon.T {
     background-color: #15B800;
   }
   

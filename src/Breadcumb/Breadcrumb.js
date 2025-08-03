@@ -6,7 +6,7 @@ const Breadcrumb = () => {
     <div className="breadcrumb-container">
       <div className="breadcrumb-overlay">
         <div className="breadcrumb-content">
-          <h1 className="breadcrumb-title">About</h1>
+          <h1 className="breadcrumb-title">About UPPVL</h1>
         </div>
       </div>
     </div>

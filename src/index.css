@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* More Pages Dropdown Styles */
+.more-pages-desktop {
+  position: relative;
+}
+
+.more-pages-trigger {
+  cursor: pointer;
+  color: #0A1434 !important;
+}
+
+.more-pages-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 4px;
+  padding: 10px 0;
+}
+
+.more-pages-dropdown .dropdown-item {
+  color: #0A1434;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.more-pages-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .more-pages-desktop {
+    display: none;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+  }
+  
+  .separator::after {
+    display: none;
+  }
+  
+  .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .nav-link {
+    padding: 10px 15px;
+  }
+}
+
+/* Existing separator styles (keep these) */
+.separator {
+  position: relative;
+}
+
+.separator::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Button styles (keep these) */
+.button {
+  background-color: #FF6B00;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.button-text {
+  color: white !important;
+}
+
+.button:hover {
+  background-color: #e05f00;
+}

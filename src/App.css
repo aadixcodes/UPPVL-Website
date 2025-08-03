@@ -1,5 +1,5 @@
 #header{
-  background-color: #000;
+  background-color: #0a1434;
   padding:0px
 }
 @import url('https://db.onlinewebfonts.com/c/65c79a29b6ed725883911cb318380955?family=Gilmer+Regular');
@@ -12,11 +12,22 @@
   src: url('./font1/TestSohne-Dreiviertelfett-BF663d89ccc5f66.otf');
 }
 
-
-body{
-  background-color: #000;
+#meet-team  img{
+  border-radius: 20px!important;
 }
 
+#stadium  img{
+  width: 100%;
+}
+body{
+  background-color: #0a1434;
+  overflow-x: hidden
+}
+
+.teamlogofooter img{
+  width: 80px;
+  border-radius: 50px;
+}
 @font-face {
   font-family: myFirstFont1;
   src: url('./font1/TestSohne-DreiviertelfettKursiv-BF663d89cd2f687.otf');
@@ -31,6 +42,76 @@ body{
 @font-face {
   font-family: myFirstFont3;
   src: url('./font1/Motterdam.ttf');
+}
+
+.event-strip {
+  background-color: #0d0d0d;
+}
+
+.logo-img {
+  height: 60px;
+}
+
+.event-card {
+  min-width: 400px;
+}
+
+.date-box {
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.event-league {
+    font-size: 14px;
+    color: #ffc107;
+    text-transform: uppercase;
+    font-family: 'Test Shne Breit';
+    font-weight: 600;
+}
+
+.event-title {
+    font-weight: bold;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Poppins';
+}
+
+.countdown-timer {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.colon {
+  margin: 0 5px;
+}
+.event-card .text-light
+{
+      font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'Gilmer Bold';
+    color: #e6e6e6 !important;
+}
+.countdown-timer span{
+  color: #ffc107;
+      color: #ffc107;
+    font-size: 20px;
+    font-family: 'Test Shne Breit';
+}
+.hrsec{
+  color: #fff!important;
+  font-size: 14px!important;
+  text-align: left;
+}
+.event-info .small
+{
+      font-size: 18px;
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Gilmer Bold';
 }
 
 .preheader .marque-date h5{
@@ -54,6 +135,8 @@ body{
   line-height: 22px;
 }
 
+
+
 .League-title  .uppvl h4{
   color: #FFCA49;
   font-family: "Test Shne Breit";
@@ -70,6 +153,13 @@ body{
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+}
+.fix-footer .btn{
+  border-radius: 0px;
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  border-radius: 2px;
 }
 .countdown-time h4
 {
@@ -150,7 +240,7 @@ body{
   display: none;
 }
 .nav-item a{
-  color: #000!important;
+  color: #0a1434!important;
   padding: 14px;
 }
 .logoheader img{
@@ -172,20 +262,30 @@ body{
 .navbar-nav{
   padding: 0px 25px;
 }
-
+#teameet{
+  padding: 20px 30px;
+}
+#teameet img{
+  margin-bottom: 20px;
+      border: 2px solid #ffca49;
+}
 .nav-link {
   text-transform: uppercase;
-  font-size: 15px;
-  padding: 12px 20px!important;
+  font-size: 15px!important;
+  padding: 12px 10px!important;
   text-transform: uppercase;
   font-weight: 700!important;
   font-style: italic;
   font-family: "Test Shne Breit";
 }
+
+
+
+
 /* fixtures */
 #fixtures{
-  padding: 40px 0px 40px 20px;
-  background-color: #000;
+  padding: 40px 40px 40px 20px;
+  background-color: #0a1434;
 }
 .card-container {
   position: relative;
@@ -235,11 +335,24 @@ body{
 .match-highlights {
   color: #fff!important;
 }
-.section-heading h4{
+.footerlink ul li a {
+  text-decoration: none;
   color: #fff;
+}
+.section-heading h4{
+  color: #fff!important;
   font-family: 'myFirstFont1';
+  font-size: 32px;
+margin-top: 20px;
+
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+.news-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 10px;
 }
 .upload-info p{
   color: #ffff;
@@ -282,11 +395,49 @@ margin-bottom: 0px;
 }
 
 .banner {
-  background-image: url('./banner.jpg'); /* Add your banner image */
   background-size: cover;
   height: 90vh; /* Adjust height as needed */
   position: relative;
 }
+
+.hero-slider {
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 200%; /* Two slides */
+  height: 100%;
+  animation: slide 10s infinite;
+}
+
+.slide1 {
+  background-image: url('/src/banner2.png');
+}
+
+.slide2 {
+  background-image: url('/src/banner3.png');
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  40%  { transform: translateX(0%); }
+  50%  { transform: translateX(-100%); }
+  90%  { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5); /* This adds a semi-transparent overlay */
@@ -319,7 +470,7 @@ margin-bottom: 0px;
 
 /* About Us */
 #about-us{
-  background-color: #000;
+  background-color: #0a1434;
   padding: 30px 20px;
 }
 #about-us p{
@@ -328,29 +479,30 @@ margin-bottom: 0px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 28px;
-  width: 70%;
+  width: 82%;
   font-size: 18px;
   margin: auto;
 }
 
 #mission-vision{
-  background-color: #000;
+  background-color: #0a1434;
+  padding-top: 12px;
 }
 
 .missionbox{
-  background: #14141F;
+  background: #fff;
   padding: 40px 60px;
   margin: 0px 80px;
   border-radius: 20px;
 }
 .para-mission p{
-  color:#ffffffd1;
+  color:#000;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 .missionbox1 h4{
-  color: #fff;
+  color: #000;
   font-size: 28px;
   margin-bottom:20px;
   /* margin-top: 10px; */
@@ -372,26 +524,36 @@ margin-bottom: 0px;
   left: 150px;
 }
 
+
+.latest-news-section  button{
+  color: #fff;
+}
 .img-mission1 img{
   width: 100%;
   position: relative;
   left: 100px;
+  border: 2px solid #ffca49;
   border-radius: 40px;
 }
 .img-mission2  img{
   width: 100%;
   position: relative;
   right: 100px;
+  border: 2px solid #ffca49;
   border-radius: 40px;
 }
 
 #meet-team{
-  background-color: #000;
+  background-color: #0a1434;
   padding: 40px 40px;
+}
+.slick-prev:before, .slick-next:before {
+  display: none;
 }
 .headingteam  h4{
   color: #fff;
    font-family: myFirstFont1;
+   font-size: 32px;
    text-transform: uppercase;
 }
 
@@ -408,27 +570,101 @@ margin-bottom: 0px;
   margin-bottom: 30px;
 }
 
+#blogcard h5{
+      font-size: 18px;
+    line-height: 24px;
+    font-family: 'Gilmer Bold';
+}
+#blogcard a{
+    text-decoration: none;
+    color: #000;
+}
+.blogdetails {
+  
+    font-family: 'Gilmer Bold';
 
+}
+
+.blogdetails p ,.blogdetails li{
+  font-family: "Test Shne Breit";
+
+}
+
+
+
+.image-wrapper img {
+  height:400px;
+  width: 100%; /* prevents stretching */
+  object-fit: cover; /* or use 'cover' */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 #video-section{
   padding: 40px 20px;
-  background-color: #000;
+  background-color: #0a1434;
 }
 .videocontent h4{
-  color: #000;
+  color: #0a1434;
   font-family: myFirstFont1;
   text-transform: uppercase;
-}
+color: #fff;}
+  
 .videocontent p{
   font-family: 'poppins';
-  width: 59%;
+  width:90%;
   margin: auto;
   line-height: 25px;
 }
-.bg-black{
-  background-color: #000;
+
+.videotitle img
+{
+      width: 96px;
+    margin-bottom: 20px;
 }
+.bg-black{
+  background-color: #0a1434;
+} 
+
+
+
+
+.designation h5{
+  color: #ffca49;
+  font-size: 20px;
+      font-family: 'Test Shne Breit';
+      margin-top: 20px;
+}
+.designation h6{
+  color: #fff;
+        font-family: 'Test Shne Breit';
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .whitebox{
-  padding: 80px;
+  padding: 60px;
   border-radius: 40px;
   background-color: #fff;
 }
@@ -449,7 +685,7 @@ margin-bottom: 0px;
   margin-bottom: 40px;
 }
 #vision{
-  padding: 50px 150px;
+  padding: 50px 130px;
 }
 .right-vision  img{
   width: 80%;
@@ -458,12 +694,12 @@ margin-bottom: 0px;
 
 #table-points{
   padding: 80px 150px; 
-  background-color: #000;
+  background-color: #0a1434;
 }
 
 .leaderboard-table td{
 font-family: 'poppins';
-color: #000;
+color: #0a1434;
 background-color: #fff;
 text-transform: uppercase;
 }
@@ -476,7 +712,7 @@ text-transform: uppercase;
 }
 
 tr{
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #0a1434;
 }
 .trhighlight{
   font-family: myFirstFont1!important;
@@ -486,7 +722,6 @@ tr{
 #fixture-home{
 background-color: #fff;
 padding: 40px 20px;
-margin: 20px;
 border-radius: 20px;
 background-image: url('./strip.png');
 background-size: cover;
@@ -496,7 +731,7 @@ background-size: cover;
 
 
 #fixture-home h4{
-  color: #000!important;
+  color: #0a1434!important;
 }
 .match-card {
   background: #fff;
@@ -511,7 +746,7 @@ background-size: cover;
 .header {
   display: flex;
   justify-content: space-between;
-  background: #000;
+  background: #0a1434;
   color: #fff;
   padding: 1px 15px;
   font-size: 14px;
@@ -541,7 +776,7 @@ background-size: cover;
   font-size: 12px;
   text-transform: uppercase;
   padding: 5px 15px;
-  color: #000;
+  color: #0a1434;
   transform: skew(-40deg, 0);
   letter-spacing: 0.5px;
   font-family: myFirstFont;
@@ -592,7 +827,7 @@ background-size: cover;
 
 .match-info .location {
   font-size: 12px;
-  color: #000000;
+  color: #0a1434;
   font-family: "Test Shne Breit";
 }
 
@@ -640,13 +875,21 @@ background-size: cover;
   margin: 40px auto;
   display: block;
   background-image:url('./buttonbg.png');
-  background-size: cover;
+  background-size: #0a1434;
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: #030311;
   color: #fff;
   padding: 20px;
   border: 0px;
+  text-decoration: none;
   transform: skew(-40deg, 0);
+}
+
+#teameet h6{
+      font-family: 'Test Shne Breit';
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: -10px !important;
 }
 .gradient-text {
   font-size: 30px; /* Adjust font size */
@@ -657,13 +900,56 @@ background-size: cover;
   background: linear-gradient(to bottom, #FFFFFF, #B4B4FF); /* Pink gradient from top to bottom */
   color: transparent; /* Make the text transparent to show the gradient */
   text-align: center; /* Center the text */
-  -webkit-text-stroke: 2px #6E6BFF; /* Apply pink outline with 2px width */
+  /* -webkit-text-stroke: 2px #6E6BFF; Apply pink outline with 2px width */
   text-stroke: 2px #6E6BFF; /* Same effect for non-webkit browsers */
 }
+.marquee{
+  font-family: 'Test Shne Breit';
+}
+.headerlogo{
+      position: absolute;
+    width: 80px;
+    margin: auto;
+    left: 70px;
+    z-index: 99;
+    top: 8px;
+}
+.partner{
+      font-family: 'myFirstFont1';
+      font-size: 32px;
+}
+
+
+#banner-slider {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-carousel .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.banner-carousel .prev-slide {
+  left: 15px;
+}
+
+.banner-carousel .next-slide {
+  right: 15px;
+}
+
 
 #foter-section{
-  background-image: url('./footerimg.jpg');
-  background-size: contain;
+  background-image: url('./FOOTER.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   border-top: 3px solid #FFCA49;
   padding: 50px 30px 20px ;
@@ -683,6 +969,16 @@ background-size: cover;
 }
 .footerlink  img{
   width: 102px;
+      width: 79px;
+      display: block;
+      margin: auto;
+    margin-top: 30px;
+}
+#partner  h6{
+    font-family: 'Gilmer Bold';
+  }
+.footerlink ul{
+  margin-bottom: 20px;
 }
 .footerlink ul{
   display: flex;
@@ -713,9 +1009,18 @@ width: 60px;
 }
 .teamlogofooter{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   margin-bottom: 50px;
-  margin-top: 60px;
+  margin-top: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teamlogofooter img{
+  margin-left: 20px;
+}
+.logofooter{
+  margin: auto;
 }
 .newsbox img{
   width: 100%;
@@ -726,7 +1031,7 @@ width: 60px;
 }
 
 .caption-news h5{
-  color: #000;
+  color: #0a1434;
   font-family: "Gilmer Bold";
   margin-bottom: 10px;
 
@@ -764,13 +1069,28 @@ width: 60px;
 }
 
 .newpage{
-  padding: 10px 60px 30px 60px;
+  padding: 10px 0px 30px 60px;
 }
 .contact-title h4{
   color: #fff;
   font-family: 'myFirstFont1';
   font-size: 28px;
   text-align: center;
+}
+
+
+.contact-title p{
+  color: #fff;
+}
+.newsbox img{
+  border-radius: 20px;
+}
+.teamheading h4{
+  color: #000;
+}
+.teamheading p{
+
+  color: #000!important;
 }
 .contact-title p{
   color: #fff;
@@ -781,7 +1101,12 @@ font-weight: 200;
   width: 50%;
   margin: auto;
 }
-
+.contact-card{
+  padding: 20px;
+  background-color: #0c0c29;
+  border-radius: 6px;
+  margin: 20px 0px ;
+}
 .contact-card h6
 {
   font-family: 'myFirstFont1';
@@ -812,6 +1137,14 @@ font-weight: 200;
   text-align: center;
 }
 
+.rhombus {
+      width: 100px;
+      height: 8px;
+      background-color: #FFCA49;
+      transform: skew(20deg);
+      margin: 30px auto;
+    }
+
 #form-us{
   margin: 20px;
   background-color: #fff!important;
@@ -827,12 +1160,12 @@ input,textarea {
   transform: skew(168deg, 0);
 }
 input::placeholder {
-  color: #00000097;
+  color: #0a143497;
   font-family: 'poppins';
   font-size: 12px;
 }
 textarea::placeholder {
-  color: #000;
+  color: #0a1434;
   font-family: 'poppins';
   font-size: 12px;
 }
@@ -847,7 +1180,7 @@ textarea{
   padding: 10px;
 }
 .form-right h4{
-  color: #000;
+  color: #0a1434;
   font-family: 'myFirstFont1';
   text-transform: uppercase;
   font-size: 24px;
@@ -866,8 +1199,21 @@ font-weight: 300;
 
 }
 
+.newpage {
+  background-color: #021042;
+  padding: 40px;
+}
+
+.newpage .newsbox{
+  margin-bottom: 30px!important;
+}
+.marquee
+{
+      font-size: 15px;
+    margin-top: 5px;
+}
 .t1{
-  background-color: #FF0000;
+  background-color: #F0a14340;
   border-radius: 20px;
 }
 .t2{
@@ -875,10 +1221,14 @@ font-weight: 300;
   border-radius: 20px;
 
 }
+#partner img{
+  width: 80%;
+  margin-bottom: 20px;
+}
 
 .t3{
   background-color:  #ab860e;
-  border-radius: 20px;
+  border-radius: 15px;
 
 }
 .mbnav{
@@ -887,6 +1237,32 @@ font-weight: 300;
 @media only screen and (max-width: 600px) {
   .mbnav{
     display: block;
+  }
+  #partner h6{
+    font-size: 12px;
+  }
+  .blogdetails  h2{
+    font-size: 18px;
+  }
+    .blogdetails  h3{
+    font-size: 16px;
+  }
+  #blogcard h5{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .card-body{
+    padding: 10px;
+  }
+  .blogdetails li , .blogdetails p{
+    
+    font-size: 14px;
+  }
+  #teameet{
+    padding: 15px 10px;
+  }
+  .image-wrapper img{
+    height: 200px;
   }
   .logomobile{
     width: 30px!important;
@@ -986,8 +1362,13 @@ font-weight: 300;
 .copy-rigth{
   display: block;
 }
+.teamlogofooter img{
+  width: 30px!important;
+}.social-icon ul{
+  justify-content: center;
+}
 #foter-section .container{
-  width: 90%;
+  width: 100%;
 }.copy-rigth p{
   font-size: 10px;
   color: #dfdfdf;
@@ -996,7 +1377,7 @@ font-weight: 300;
   margin-top: 10px;
 }
 #fixture-home{
-  padding: 20px 10px;
+  padding: 10px 0px;
 }
 #about-us p{
   width: 100%;
@@ -1018,7 +1399,7 @@ font-weight: 300;
   width: 100%!important;
 }
 .breadcrumb-container{
-  height: 190px!important;
+  height: 130px!important;
 }
 .missionbox{
   margin: 0px;
@@ -1134,7 +1515,8 @@ td{
   display: none;
 }
 .section-heading h4{
-margin-bottom: 15px;
+margin-bottom: 10px;
+margin-top: 10px;
 font-size: 16px!important;
   
 }
@@ -1168,8 +1550,21 @@ font-size: 16px!important;
 .gradient-text{
   -webkit-text-stroke: 1px #6E6BFF
 }
-#header{
+
+marquee{
   display: none;
+}
+.headerlogo {
+         position: relative !important;
+        width: 45px;
+        margin: auto;
+        left: 0px;
+        z-index: 99;
+        top: 2px;
+        padding: 5px;
+}
+.navbar-toggler{
+  margin-top: -50px;
 }
 .arrowreadmore{
   width: 10px!important;
@@ -1198,7 +1593,7 @@ font-size: 16px!important;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 20px; /* Adjust based on your needs */
+  top: -10px;
 }
 
 .navbar-toggler-icon {
@@ -1207,16 +1602,21 @@ font-size: 16px!important;
   width: 30px;
   height: 3px;
   right: 20px;
-  background-color: #ffca49;
   transition: transform 0.3s ease-in-out;
+  display: none;
 }.navbar-toggler{
   z-index: 999999;
 }
+.partner {
+  font-size: 22px;
+}
+
 
 /* Hamburger icon (3 bars) when menu is closed */
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
   content: '';
+  display: none;
   position: absolute;
   width: 30px;
   height: 3px;
@@ -1225,13 +1625,13 @@ font-size: 16px!important;
 }
 
 .navbar {
-  background-color: #000!important;
+  background-color: #0a1434!important;
 }
 .navbar-toggler-icon::before {
   top: -8px;
 }
 .navbar-collapse.show{
-  background-color: #000;
+  background-color: #0a1434;
 }
 .nav-item a{
   color: #fff!important;
@@ -1283,7 +1683,7 @@ font-size: 16px!important;
     flex-direction: column;
   }
   .separator  .button-text{
-    color: #000!important;
+    color: #0a1434!important;
   }
   .nav-item {
     margin: 1rem 0;
@@ -1298,7 +1698,7 @@ font-size: 16px!important;
     padding: 7px;
   }
   .navbar-toggler-icon{
-    background-image: url();
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/033/153/185/small/hamburger-list-icons-png.png')!important;
   }
 
  
@@ -1306,5 +1706,62 @@ font-size: 16px!important;
 
 }
 
+.all-news{
+  background-color: #FFCA49;
+
+}
+
+.skew-button {
+  transform: skew(-20deg); /* Skewing for rhombus effect */
+  display: inline-block;
+  padding: 20px 30px;
+  font-weight: 800;
+}
 
 
+.match-card {
+ 
+  border-bottom: 1px solid #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.countdown div {
+  text-align: center;
+  margin: 0 5px;
+}
+
+.countdown strong {
+  font-size: 1.5rem;
+  color: #ffc107;
+}
+
+.countdown span {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.match-date {
+  font-size: 0.8rem;
+}
+
+
+
+
+.latest-news-section {
+  background-color: #0b0c23;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  font-weight: bold;
+}
