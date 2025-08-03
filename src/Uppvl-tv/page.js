@@ -535,7 +535,7 @@ const VideoGallery = () => {
               setActiveCategory('uppvl-tv');
             }}
           >
-            UPPVL TV
+            Trophy Launch & Auction
           </button>
           <button
             className={`filter-button ${activeCategory === 'creators-tour' ? 'active' : ''}`}
