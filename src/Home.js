@@ -15,7 +15,7 @@ import FixtureHome from './FixtureHome'
 import Footer from "./Footer";
 import news from "./news.png";
 import arrow from "./arrow.png";
-import banner from "./BANNER.jpg";
+import banner from "./bannerhero.jpg";
 import banner2 from "./Banner 2.jpg";
 import line from "./line.svg";
 import team1 from "./images/ASK.jpg";
