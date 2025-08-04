@@ -8,6 +8,8 @@ import l5 from '../nivia2.png'
 import l6 from '../Spartan.png'
 import l7 from '../Night Owl.png'
 import l8 from '../About/aadiyogi.png'
+import l9 from '../RadioPartner2.png'
+import l10 from '../ExperiencePartner2.png'
 
 
 const PartnersSection = () => {
@@ -17,11 +19,11 @@ const PartnersSection = () => {
     l2,
     l2,
     l2,
-  
+
   ];
 
   return (
-    <section className="container text-center py-5" id='partner'  aria-label="Our Partners Section">
+    <section className="container text-center py-5" id='partner' aria-label="Our Partners Section">
       {/* Decorative Yellow Line */}
       <div className="d-flex justify-content-center mb-2">
         {/* <div
@@ -43,87 +45,95 @@ const PartnersSection = () => {
 
       {/* First Row of Logos */}
       <div className="row justify-content-center">
-          <div className="col-3 col-sm-4 col-md-2">
+        <div className="col-3 col-sm-4 col-md-2">
 
-                  <h6>Broadcasting Partner
-</h6>
-            <img src={l1} alt="uppvl" className="img-fluid" />
-      
-          </div>
+          <h6>Broadcasting Partner
+          </h6>
+          <img src={l1} alt="uppvl" className="img-fluid" />
 
-           <div className="col-3 col-sm-4 col-md-2">
-               <h6>Broadcasting Partner
-</h6>
-            <img src={l2} alt="uppvl" className="img-fluid" />
-         
-          </div>
-
-        
+        </div>
 
         <div className="col-3 col-sm-4 col-md-2">
-              <h6>Equipment Partner
+          <h6>Broadcasting Partner
+          </h6>
+          <img src={l2} alt="uppvl" className="img-fluid" />
 
-</h6>
-            <img src={l5} alt="uppvl" className="img-fluid" />
-          </div>
-
-
-
-            
-           <div className="col-3 col-sm-4 col-md-2">
-                <h6>Marchandise Partner
-</h6>
-            <img src={l4} alt="uppvl" className="img-fluid" />
-        
-          </div>
+        </div>
 
 
-           
 
-           <div className="col-3 col-sm-4 col-md-2">
-                 <h6>Kit Partner
-</h6>
-            <img src={l6} alt="uppvl" className="img-fluid" />
-       
-          </div>
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Equipment Partner
+
+          </h6>
+          <img src={l5} alt="uppvl" className="img-fluid" />
+        </div>
 
 
 
 
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Marchandise Partner
+          </h6>
+          <img src={l4} alt="uppvl" className="img-fluid" />
 
-<div className="col-3 col-sm-4 col-md-2">
-                <h6>Organizing Partner
-</h6>
-            <img src={l8} alt="uppvl" className="img-fluid" />
-          
-          </div>
-
-
-             <div className="col-3 col-sm-4 col-md-2">
-       <h6>Media  Partner
-</h6>
-            <img src={l3} alt="uppvl" className="img-fluid" />
-         
-          </div>
-            <div className="col-3 col-sm-4 col-md-2">
-                <h6>Production Partner
-</h6>
-            <img src={l7} alt="uppvl" className="img-fluid" />
-          
-          </div>
+        </div>
 
 
 
-        
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Kit Partner
+          </h6>
+          <img src={l6} alt="uppvl" className="img-fluid" />
+
+        </div>
+
+
+
+
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Organizing Partner
+          </h6>
+          <img src={l8} alt="uppvl" className="img-fluid" />
+
+        </div>
+
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Media  Partner
+          </h6>
+          <img src={l3} alt="uppvl" className="img-fluid" />
+        </div>
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Production Partner
+          </h6>
+          <img src={l7} alt="uppvl" className="img-fluid" />
+        </div>
+        {/* <div className="col-3 col-sm-4 col-md-2">
+          <h6>Experience Partner
+          </h6>
+          <img src={l9} alt="uppvl" className="img-fluid" />
+        </div> */}
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Radio Partner
+          </h6>
+          <img src={l10} alt="uppvl" className="img-fluid" />
+        </div>
+
+
+
+
       </div>
 
       {/* Second Row of Logos */}
-   
+
 
       {/* Divider */}
       {/* <hr /> */}
 
-      
+
     </section>
   );
 };
