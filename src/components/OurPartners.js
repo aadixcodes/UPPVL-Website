@@ -111,19 +111,16 @@ const PartnersSection = () => {
           </h6>
           <img src={l7} alt="uppvl" className="img-fluid" />
         </div>
-        {/* <div className="col-3 col-sm-4 col-md-2">
-          <h6>Experience Partner
-          </h6>
-          <img src={l9} alt="uppvl" className="img-fluid" />
-        </div> */}
         <div className="col-3 col-sm-4 col-md-2">
           <h6>Radio Partner
           </h6>
-          <img src={l10} alt="uppvl" className="img-fluid" />
+          <img src={l9} alt="uppvl" className="img-fluid" />
         </div>
-
-
-
+        {/* <div className="col-3 col-sm-4 col-md-2">
+          <h6>Experience Partner
+          </h6>
+          <img src={l10} alt="uppvl" className="img-fluid" />
+        </div> */}
 
       </div>
 

@@ -4,6 +4,7 @@ export const teamsData = [
       id: 1,
       name: "Ayodhya Super Kings",
       slug: "ayodhya-super-kings-squad",
+      logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324935/ayodhya_jr2yhp.png",
       bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246773/ASK_jqpwlu.jpg",
       players: [
         { id: 1, name: "Amit Gulia", position: "Attacker", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },
@@ -27,6 +28,7 @@ export const teamsData = [
       id: 2,
       name: "Gorakhpur Giants",
       slug: "gorakhpur-giants-squad",
+      logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324937/gorakhpur_cwawjd.png",
       bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246773/gorakhpur_kjit5s.jpg",
       players: [
         { id: 1, name: "Saqlain Tariq", position: "Setter", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },
@@ -49,6 +51,7 @@ export const teamsData = [
       id: 3,
       name: "Kashi Warriors",
       slug: "kashi-warriors-squad",
+      logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324937/kashi_f2ue3v.png",
       bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246772/kashi_smkp5h.jpg",
       players: [
         { id: 1, name: "Aditya Rana", position: "Blocker", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },
@@ -72,6 +75,7 @@ export const teamsData = [
       id: 4,
       name: "Lucknow Tigers",
       slug: "lucknow-tigers-squad",
+      logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324936/lucknow_h9jbki.png",
       bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246772/lucknow_llenqe.jpg",
       players: [
         { id: 1, name: "Rajat Choudhary", position: "Attacker", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },
@@ -95,6 +99,7 @@ export const teamsData = [
         id: 5,
         name: "Mathura Yodhyas",
         slug: "mathura-yodhyas-squad",
+        logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324937/mathura_mrfm5a.png",
         bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246773/mathura_b9zdld.jpg",
         players: [
           { id: 1, name: "Vinit Kumar", position: "Universal", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },
@@ -118,6 +123,7 @@ export const teamsData = [
         id: 6,
         name: "Moradabad Bulls",
         slug: "moradabad-bulls-squad",
+        logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324937/moradabad_vfvxlf.png",
         bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246772/moradabad_ut51sa.jpg",
         players: [
           { id: 1, name: "Angamuthu Ramaswamy", position: "Universal", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },
@@ -141,6 +147,7 @@ export const teamsData = [
         id: 7,
         name: "Muzaffarnagar Lions",
         slug: "muzaffarnagar-lions-squad",
+        logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324934/muzaffarnagar_e70oto.png",
         bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246773/muzzafarnagar_xlqvdz.jpg",
         players: [
           { id: 1, name: "Jerome Vinith", position: "Universal", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },
@@ -164,6 +171,7 @@ export const teamsData = [
         id: 8,
         name: "Noida Thunders",
         slug: "noida-thunders-squad",
+        logo: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754324937/noida_k5ryqe.png",
         bannerImage: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754246772/noidaa_phii7h.jpg",
         players: [
           { id: 1, name: "Vipul Kumar", position: "Setter", image: "https://res.cloudinary.com/dctkzy9nd/image/upload/v1754249629/placeholderimage_mqi2rq.webp" },

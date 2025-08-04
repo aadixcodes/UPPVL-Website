@@ -139,10 +139,24 @@ export default function TeamDetail() {
           </div>
         </div>
       </div>
+
+
+      <div className="team-logo-section">
+        <div className="container">
+          <div className="team-logo-container">
+            <img 
+              src={team.logo} 
+              alt={`${team.name} Logo`}
+              className="team-logo"
+            />
+          </div>
+        </div>
+      </div>
+
+
       
       <section className="players-section">
         <div className="container">
-          {/* <h2 className="section-title">Squad Players</h2> */}
           <div className="squad-layout">
             {/* Featured Player Card - Large */}
             <div className="featured-player-card">
@@ -199,6 +213,25 @@ export default function TeamDetail() {
       </section>
 
       <style>{`
+
+ /* Add these new styles for the logo section */
+        .team-logo-section {
+        }
+        
+        .team-logo-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // padding: 20px;
+        }
+        
+        .team-logo {
+          max-width: 200px;
+          max-height: 200px;
+          object-fit: contain;
+          filter: drop-shadow(0 0 10px rgba(255,202,73,0.5));
+        }
+
         .container {
           max-width: 1200px;
           margin: 3rem auto;
@@ -217,9 +250,9 @@ export default function TeamDetail() {
           text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
-        .players-section {
-          padding: 40px 0;
-        }
+        // .players-section {
+        //   padding: 40px 0;
+        // }
 
         .section-title {
           color: #FFCA49;
