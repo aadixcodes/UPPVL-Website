@@ -256,9 +256,9 @@ export default function About() {
 
 
 
-<p>UPPVL is more than a league. It is a story of opportunity, a celebration of grit, and a tribute to the youth of this state who are ready to rise and rally.</p>
+<p>UPPVL is more than a league. It is a story of opportunity, a celebration of grit, and a tribute to the youth of this state who are ready to rise, rally, and represent.</p>
  
- <p>I invite every volleyball enthusiast, player, coach, and fan to be a part of this historic journey. Together, let’s serve greatness."
+ <p>I invite every volleyball enthusiast, player, coach, and fan to be a part of this historic journey. Together, let’s serve up greatness."
 </p>
 
 

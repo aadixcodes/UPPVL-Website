@@ -73,7 +73,7 @@ const PartnersSection = () => {
 
 
         <div className="col-3 col-sm-4 col-md-2">
-          <h6>Marchandise Partner
+          <h6>Merchandise Partner
           </h6>
           <img src={l4} alt="uppvl" className="img-fluid" />
 

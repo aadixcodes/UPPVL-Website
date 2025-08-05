@@ -53,8 +53,8 @@ const AuctionPage = () => {
   Talent, all within a fixed budget cap. From Ayodhya Super Kings' marquee signing of 
   national star Amit Gulia to Kashi Warriors' smart grab of a clutch libero, the auction was a 
   masterclass in planning and passion. Noida Thunders leaned on experience, while 
-  Muzaffarnagar Lions invested in future stars. In just 4 hours, 150 players were drafted, with 
-  each franchise forming a balanced unit of 10–12 athletes, ready to take the UPPVL stage by 
+  Muzaffarnagar Lions invested in future stars. In just four hours, 150 players were drafted, with 
+  each franchise forming a balanced unit of 10 to 12 athletes, ready to take the UPPVL stage by 
   storm.`;
 
   const topPicks = [
