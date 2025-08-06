@@ -1025,10 +1025,10 @@ width: 60px;
 .newsbox img{
   width: 100%;
 }
-.newscard{
+/* .newscard{
   background-color: #fff;
   border-radius: 25px;
-}
+} */
 
 .caption-news h5{
   color: #0a1434;
@@ -1764,4 +1764,84 @@ button.btn-warning {
   background-color: #ffc107;
   border: none;
   font-weight: bold;
+}
+
+
+
+
+/* Anthem Button Styles */
+.anthem-button-container {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.anthem-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #FFCA49;
+  color: #0A1434;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-family: 'poppins';
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #0A1434;
+  min-width: 160px;
+}
+
+.anthem-button:hover {
+  background-color: #f4bd33;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-icon {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+  .anthem-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    min-width: 180px;
+  }
+  .button-icon {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .anthem-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    min-width: 200px;
+  }
+  .anthem-button-container {
+    bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .anthem-button {
+    padding: 12px 28px;
+    font-size: 20px;
+  }
+}
+
+/* Make sure the banner container has relative positioning */
+.banner-carousel .item {
+  position: relative;
 }

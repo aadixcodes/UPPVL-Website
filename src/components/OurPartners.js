@@ -9,7 +9,8 @@ import l6 from '../Spartan.png'
 import l7 from '../Night Owl.png'
 import l8 from '../About/aadiyogi.png'
 import l9 from '../RadioPartner2.png'
-import l10 from '../ExperiencePartner2.png'
+import l10 from '../OttPartner.png'
+import l11 from '../bookmyshow.png'
 
 
 const PartnersSection = () => {
@@ -116,11 +117,16 @@ const PartnersSection = () => {
           </h6>
           <img src={l9} alt="uppvl" className="img-fluid" />
         </div>
-        {/* <div className="col-3 col-sm-4 col-md-2">
-          <h6>Experience Partner
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>OTT Partner
           </h6>
           <img src={l10} alt="uppvl" className="img-fluid" />
-        </div> */}
+        </div>
+        <div className="col-3 col-sm-4 col-md-2">
+          <h6>Online Ticketing Partner
+          </h6>
+          <img src={l11} alt="uppvl" className="img-fluid" />
+        </div>
 
       </div>
 
