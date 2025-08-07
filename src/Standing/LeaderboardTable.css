@@ -1,52 +1,131 @@
 .leaderboard-container {
-    width: 100%;
-    overflow-x: auto;
-    margin: 20px 0px;
-  }
-  
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  min-height: 400px;
+  position: relative;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-container .error-message {
+  color: #d32f2f;
+  padding: 15px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  border-left: 4px solid #f44336;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.leaderboard-table th {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.leaderboard-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.trhighlight {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-icons {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.form-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-icon.win {
+  background-color: #28a745;
+}
+
+.form-icon.loss {
+  background-color: #dc3545;
+}
+
+.form-icon.draw {
+  background-color: #6c757d;
+}
+
+.form-icon.pending {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .leaderboard-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
   
   .leaderboard-table th,
   .leaderboard-table td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .leaderboard-table th {
-    background-color: #000;
-    color: #fff;
-    font-size: 10px;
-  }
-  
-  .form-icons {
-    display: flex;
+    padding: 8px 10px;
   }
   
   .form-icon {
-    width: 30px;
-    height:30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.65rem;
   }
-  
-  .form-icon.T {
-    background-color: #15B800;
-  }
-  
-  .form-icon.L {
-    background-color: red;
-  }
-  
-  .form-icon.D {
-    background-color: black;
-  }
-  
+}

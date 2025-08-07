@@ -1,99 +1,63 @@
-import React from 'react';
-import './LeaderboardTable.css'; // Import the CSS file
-import img1 from './image 12.png'
-const leaderboardData = [
-  {
-    position: 1,
-    team: "NOIDA THUNDERS	",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
-  {
-    position: 2,
-    team: "Lucknow Tigers",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
-  {
-    position: 3,
-    team: "Gorakhpur Giants",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
+import React, { useState, useEffect } from 'react';
+import './LeaderboardTable.css';
+import axios from 'axios';
 
-
-  {
-    position: 4,
-    team: "Mathura Yodhas",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
-
-
-
-  {
-    position: 5,
-    team: "Ayodhya Super Kings ",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
-
-  {
-    position: 6,
-    team: "Moradabad Bulls",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
-
-  {
-    position: 7,
-    team: "Kashi Warriors ",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
-
-  {
-    position: 8,
-    team: "Muzaffarnagar Lions",
-    points: 0,
-    matchesPlayed: 0,
-    wins: 0,
-    losses: 0,
-    form: ["T", "T", "T", "T", "T"],
-    nextMatch: "T"
-  },
-  // Add more data for each team as shown in the image
-];
+// Create axios instance with base URL
+const api = axios.create({
+  baseURL: process.env.REACT_APP_BASE_URL,
+  headers: { 'Content-Type': 'application/json' },
+});
 
 const LeaderboardTable = () => {
+  const [teams, setTeams] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchLeaderboard = async () => {
+      try {
+        const response = await api.get('/getallLeaderboard');
+        // Sort by points in descending order
+        const sortedTeams = response.data.sort((a, b) => b.points - a.points);
+        setTeams(sortedTeams);
+      } catch (err) {
+        console.error('Error fetching leaderboard:', err);
+        setError('Failed to load leaderboard data');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchLeaderboard();
+  }, []);
+
+  // Function to get form icons based on last 5 matches
+  const getFormIcons = (allMatches = []) => {
+    // Get last 5 matches or all if less than 5
+    const lastMatches = allMatches.slice(-5).reverse();
+    // If no matches, return array of 'T' for 'To be determined'
+    if (lastMatches.length === 0) return Array(5).fill('T');
+    
+    // Map match results to form icons
+    return lastMatches.map(match => match.result.charAt(0)); // 'W' or 'L'
+  };
+
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <p>Loading leaderboard...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="error-container">
+        <p className="error-message">{error}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="leaderboard-container">
       <table className="leaderboard-table table-striped">
@@ -110,28 +74,35 @@ const LeaderboardTable = () => {
           </tr>
         </thead>
         <tbody>
-          {leaderboardData.map((team, index) => (
-            <tr  key={index}>
-              <td className='text-center'>{team.position}</td>
-              <td className='text-left trhighlight'>
-                 {/* <img src={img1} className='img-fluid' /> */}
-                  &nbsp;&nbsp;{team.team}</td>
-              <td className='trhighlight'>{team.points}</td>
-              <td>{team.matchesPlayed}</td>
-              <td>{team.wins}</td>
-              <td>{team.wins}</td>
-              <td>
-                <div className="form-icons">
-                  {team.form.map((result, idx) => (
-                    <span key={idx} className={`form-icon trhighlight ${result}`}>
-                      {/* {result} */} -
-                    </span>
-                  ))}
-                </div>
-              </td>
-              <td>TBD</td>
-            </tr>
-          ))}
+          {teams.map((team, index) => {
+            const formIcons = getFormIcons(team.allMatches);
+            
+            return (
+              <tr key={team._id}>
+                <td className='text-center'>{index + 1}</td>
+                <td className='text-left trhighlight'>
+                  &nbsp;&nbsp;{team.teamname}
+                </td>
+                <td className='trhighlight'>{team.points}</td>
+                <td>{team.totalMatches}</td>
+                <td>{team.totalWins}</td>
+                <td>{team.totalLosses}</td>
+                <td>
+                  <div className="form-icons">
+                    {formIcons.map((result, idx) => (
+                      <span 
+                        key={idx} 
+                        className={`form-icon trhighlight ${result === 'W' ? 'win' : result === 'L' ? 'loss' : ''}`}
+                      >
+                        {result}
+                      </span>
+                    ))}
+                  </div>
+                </td>
+                <td>{team.nextMatch || 'TBD'}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

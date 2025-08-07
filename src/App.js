@@ -21,6 +21,7 @@ import Fixtures from './Fixtures/page'
 import UPPVLTV from './Uppvl-tv/page';
 import AuctionPage from './Auction/page';
 import CreatorsTour from './Creators-Tour/page';
+import Dashboard from './Dashboard/page';
 
 function App() {
   return (
@@ -39,10 +40,9 @@ function App() {
           <Route path="/uppvl-tv" element={<UPPVLTV />} />
           <Route path="/auction" element={<AuctionPage />} />
           <Route path="/creators-tour" element={<CreatorsTour />} />
-
-               <Route path="/blog" element={<BlogGridPage />} />
-        <Route path="/blog/:id" element={<BlogDetailsPage />} />
-
+          <Route path="/blog" element={<BlogGridPage />} />
+          <Route path="/blog/:id" element={<BlogDetailsPage />} />
+          <Route path="/admin" element={<Dashboard />} />
 
 
         </Routes>
