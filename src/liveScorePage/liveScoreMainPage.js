@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../Header'
 import Breadcrumb from '../Breadcumb/Breadcrumb'
-import LeaderboardTable from './LeaderboardTable'
+import LiveScore from './liveScore'
 import st from '../Stadium.jpg'
-export default function Standing() {
+export default function PointTableBanner() {
   return (
 <>
 
 <div className="breadcrumb-container">
       <div className="breadcrumb-overlay">
         <div className="breadcrumb-content">
-          <h1 className="breadcrumb-title">Points Table</h1>
+          <h1 className="breadcrumb-title">Live Matches Score</h1>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@ export default function Standing() {
 <section id='table-points'>
     
 
-    <LeaderboardTable/>
+    <LiveScore/>
     </section>
     
     

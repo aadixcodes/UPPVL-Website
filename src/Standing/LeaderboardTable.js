@@ -8,7 +8,7 @@ const api = axios.create({
   headers: { 'Content-Type': 'application/json' },
 });
 
-const LeaderboardTable = () => {
+const PointTable = () => {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -109,4 +109,4 @@ const LeaderboardTable = () => {
   );
 };
 
-export default LeaderboardTable;
+export default PointTable;

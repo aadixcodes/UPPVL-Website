@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Home from './Home';
 import About from './About/About';
 import Standing from './Standing/Standing';
+import LiveScorePage from './liveScorePage/liveScoreMainPage';
 import LeaderboardTable from './Standing/LeaderboardTable';
 import Footer from './Footer';
 import Header from './Header';
@@ -30,7 +31,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/standings" element={<Standing />} />
+          <Route path="/points-table" element={<Standing />} />
+          <Route path="/live-score" element={<LiveScorePage />} />
           <Route path="/news" element={<News />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
@@ -43,8 +45,6 @@ function App() {
           <Route path="/blog" element={<BlogGridPage />} />
           <Route path="/blog/:id" element={<BlogDetailsPage />} />
           <Route path="/admin" element={<Dashboard />} />
-
-
         </Routes>
       <Footer/>
     </Router>

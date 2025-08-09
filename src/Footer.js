@@ -84,7 +84,7 @@ export default function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/standings">Standings</Link>
+                            <Link to="/points-table">Points Table</Link>
                         </li>
                         <li>
                             <Link to="/news">News</Link>

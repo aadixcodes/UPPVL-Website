@@ -101,3 +101,36 @@ code {
 .button:hover {
   background-color: #e05f00;
 }
+
+
+
+
+
+/* Dropdown styles */
+.nav-item.dropdown .dropdown-menu {
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #0a1434d2;
+  font-size: 1.1rem;
+  font-family: 'myFirstFont2';
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.nav-item.dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+}

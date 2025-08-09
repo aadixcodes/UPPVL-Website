@@ -13,6 +13,24 @@ import l10 from '../OttPartner.png'
 import l11 from '../bookmyshow.png'
 
 
+import g1 from '../SponsorsLogo/Group1.png'
+import g2 from '../SponsorsLogo/Group2.png'
+import g3 from '../SponsorsLogo/Group3.png'
+import g4 from '../SponsorsLogo/Group4.png'
+import g5 from '../SponsorsLogo/Group5.png'
+import g6 from '../SponsorsLogo/Group6.png'
+// import g7 from '../SponsorsLogo/Group7.png'
+import g8 from '../SponsorsLogo/Group8.png'
+import g9 from '../SponsorsLogo/Group9.png'
+import g10 from '../SponsorsLogo/Group10.png'
+import g11 from '../SponsorsLogo/Group11.png'
+import g12 from '../SponsorsLogo/Group12.png'
+import g13 from '../SponsorsLogo/Group13.png'
+import g14 from '../SponsorsLogo/Group14.png'
+import g15 from '../SponsorsLogo/Group15.png'
+import g16 from '../SponsorsLogo/Group16.png'
+import g17 from '../SponsorsLogo/Group17.png'
+
 const PartnersSection = () => {
   const logos = [
     l1,
@@ -20,7 +38,6 @@ const PartnersSection = () => {
     l2,
     l2,
     l2,
-
   ];
 
   return (
@@ -44,99 +61,70 @@ const PartnersSection = () => {
       </h2>
       <br></br>
 
-      {/* First Row of Logos */}
-      <div className="row justify-content-center">
-        <div className="col-3 col-sm-4 col-md-2">
-
-          <h6>Broadcasting Partner
-          </h6>
-          <img src={l1} alt="uppvl" className="img-fluid" />
-
+      {/* Priority Group 1 Logo - Single in row with bigger size */}
+      <div className="row justify-content-center mb-4">
+        <div className="col-12 col-md-6 col-lg-4 mx-auto">
+          <img src={g1} alt="uppvl" className="img-fluid" style={{ maxHeight: '160px' }} />
         </div>
-
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Broadcasting Partner
-          </h6>
-          <img src={l2} alt="uppvl" className="img-fluid" />
-
-        </div>
-
-
-
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Equipment Partner
-
-          </h6>
-          <img src={l5} alt="uppvl" className="img-fluid" />
-        </div>
-
-
-
-
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Merchandise Partner
-          </h6>
-          <img src={l4} alt="uppvl" className="img-fluid" />
-
-        </div>
-
-
-
-
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Kit Partner
-          </h6>
-          <img src={l6} alt="uppvl" className="img-fluid" />
-
-        </div>
-
-
-
-
-
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Organizing Partner
-          </h6>
-          <img src={l8} alt="uppvl" className="img-fluid" />
-
-        </div>
-
-
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Media  Partner
-          </h6>
-          <img src={l3} alt="uppvl" className="img-fluid" />
-        </div>
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Production Partner
-          </h6>
-          <img src={l7} alt="uppvl" className="img-fluid" />
-        </div>
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Radio Partner
-          </h6>
-          <img src={l9} alt="uppvl" className="img-fluid" />
-        </div>
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>OTT Partner
-          </h6>
-          <img src={l10} alt="uppvl" className="img-fluid" />
-        </div>
-        <div className="col-3 col-sm-4 col-md-2">
-          <h6>Online Ticketing Partner
-          </h6>
-          <img src={l11} alt="uppvl" className="img-fluid" />
-        </div>
-
       </div>
 
-      {/* Second Row of Logos */}
+      {/* Rest of the Logos */}
+      <div className="row justify-content-center">
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g2} alt="uppvl" className="img-fluid" />
+        </div>
 
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g3} alt="uppvl" className="img-fluid" />
+        </div>
 
-      {/* Divider */}
-      {/* <hr /> */}
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g4} alt="uppvl" className="img-fluid" />
+        </div>
 
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g5} alt="uppvl" className="img-fluid" />
+        </div>
 
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g6} alt="uppvl" className="img-fluid" />
+        </div>
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g8} alt="uppvl" className="img-fluid" />
+        </div>
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g9} alt="uppvl" className="img-fluid" />
+        </div>
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g10} alt="uppvl" className="img-fluid" />
+        </div>
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g11} alt="uppvl" className="img-fluid" />
+        </div>
+
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g12} alt="uppvl" className="img-fluid" />
+        </div>
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g13} alt="uppvl" className="img-fluid" />
+        </div>
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g14} alt="uppvl" className="img-fluid" />
+        </div>
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g15} alt="uppvl" className="img-fluid" />
+        </div>
+        {/* <div className="col-3 col-sm-4 col-md-2">
+          <img src={g16} alt="uppvl" className="img-fluid" />
+        </div> */}
+        <div className="col-3 col-sm-4 col-md-2">
+          <img src={g17} alt="uppvl" className="img-fluid" />
+        </div>
+      </div>
     </section>
   );
 };
